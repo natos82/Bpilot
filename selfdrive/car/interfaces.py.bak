@@ -31,11 +31,6 @@ class CarInterfaceBase():
     self.steering_unpressed = 0
     self.low_speed_alert = False
 
-     ###added Barake Reset 
-    self.flag_pcmEnable_able =True
-    self.flag_pcmEnable_initialSet = False
-    self.initial_pcmEnable_counter = 0
-
     if CarState is not None:
       self.CS = CarState(CP)
       self.cp = self.CS.get_can_parser(CP)
